@@ -13,7 +13,13 @@ async function getFetch() {
           ${data.slip.advice}
         </h1>
         <div class="advice__divider">
-          <img src="./images/pattern-divider-desktop.svg" alt="" />
+          <picture>
+            <source
+              media="(min-width: 35em)"
+              srcset="./images/pattern-divider-desktop.svg"
+            />
+            <img src="./images/pattern-divider-mobile.svg" alt="" />
+          </picture>
         </div>
         <div class="advice__button" onclick=getFetch()>
           <img src="./images/icon-dice.svg" alt="" />
@@ -46,7 +52,7 @@ async function getFetch() {
 //   adviceContainer.innerHTML = displayItems;
 // });
 
-getFetch();
+// getFetch();
 
 btn.addEventListener("click", () => {
   getFetch();

@@ -68,3 +68,18 @@ $card-bg: hsl(217, 19%, 24%);
     }
   }
 }
+
+@media screen and (max-width: 35em) {
+  .advice {
+    &-container {
+      width: 90%;
+      padding: 40px 0 50px;
+    }
+
+    &__text {
+      font-size: 24px;
+      padding: 0;
+      margin: 20px;
+    }
+  }
+}

@@ -54,4 +54,16 @@
 .advice__button:hover {
   box-shadow: 0 0 20px 0px hsl(150, 100%, 66%);
   rotate: 360deg;
+}
+
+@media screen and (max-width: 35em) {
+  .advice-container {
+    width: 90%;
+    padding: 40px 0 50px;
+  }
+  .advice__text {
+    font-size: 24px;
+    padding: 0;
+    margin: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
